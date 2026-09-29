@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fergus Lodge #135</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mason.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- JS -->
+  <script src="./js/main.js" defer></script>
 </head>
+
 <body>
-    
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="nav">
+            <a class="logo" href="#home">Fergus #135</a>
+
+            <button class="nav-toggle">☰</button>
+
+            <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#dues" class="nav-link">Pay Dues</a></li>
+            <li><a href="#officers" class="nav-link">Officers</a></li>
+            <li><a href="./pages/events.html" class="nav-link">Events</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- INTRO SECTION -->
+        <section id="home" class="section section-blue masonic-intro">
+
+            <div class="main-pic">
+                <img src="./images/FergusOfficers.jpg" alt="Fergus Lodge Officers">
+                </div>
+
+                <h1>Fergus Lodge #135</h1>
+                <p class="subtitle">Chartered in 1850 under the Grand Lodge of Georgia</p>
+
+                <p>
+                Before Loganville was founded, Fergus Lodge #135 began its journey
+                rooted in tradition, brotherhood, and service.
+                </p>
+
+                <blockquote><strong>“We strive to make good men better.”</strong></blockquote>
+                <blockquote><strong>"To Be One... Ask One."</strong></blockquote>
+
+                <ul class="virtues">
+                <li><i class="fas fa-cross"></i> Faith</li>
+                <li><i class="fas fa-dove"></i> Hope</li>
+                <li><i class="fas fa-hand-holding-heart"></i> Charity</li>
+                </ul>
+
+        </section>
+
+        <!-- DUES SECTION -->
+            <section id="dues" class="section section-alt">
+                <h2>Annual Lodge Dues</h2>
+
+                <div class="dues-card">
+                <i class="fas fa-university" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+
+                <p>Annual lodge dues are payable once per year<br> and DUE by
+                <strong>June 1</strong> <br>to remain in good standing.</p>
+
+                <p><strong>Are your dues current?</strong></p>
+                <p>Do you have a valid dues card?</p>
+
+                <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer" class="dues-btn">
+                    💳 Pay Dues
+                </a>
+                </div>
+            </section>
+
+        <!-- OFFICERS SECTION -->
+            <section id="officers" class="section section-blue">
+                <h2>2026 Officers</h2>
+                <div class="officer-container">
+                    <ul id="officer-list" >
+                
+                <!-- main.js will populate this -->
+                </ul>
+                </div>
+            </section>
+        <!-- CONTACT SECTION -->
+                <section id="contact" class="section section-light">
+                    <h2>Contact Us</h2>
+
+                    <p class="contact-main">
+                        Fergus Lodge #135 welcomes all visitors, inquiries, and prospective members.<br>
+                        Whether you’re interested in Freemasonry <br>or simply want to learn more about
+                        our lodge, we’d be happy to hear from you.
+                    </p>
+
+                    <div class="contact-info">
+                        <p><strong>Mailing Address:</strong> P.O. Box 111, Loganville, GA 30052</p>
+                        <p><strong>Email:</strong> ferguslodge135@gmail.com</p>
+                        <p><strong>Meeting Nights:</strong> 1st & 3rd Thursday Supper 6:30pm Mtg 7:30 PM</p>
+                    </div>
+                </section>
+
+        <!-- ABOUT SECTION -->
+            <!-- <section id="about" class="section section-blue">
+                <h2>About Fergus Lodge</h2>
+
+                <p>
+                Fergus Lodge #135 has served the Loganville community for over 170 years.
+                Our mission is to uphold the values of Freemasonry through charity,
+                fellowship, and personal growth.
+                </p>
+            </section> -->
+
+        <!-- MORE INFO SECTION -->
+            <section id="more-info" class="section section-blue">
+                    <h2>More Information</h2>
+
+                    <p>
+                        <!-- Fergus Lodge #135 is committed to serving the Loganville community<br> and 
+                        supporting the principles of Freemasonry. --> <br> Connect with us or learn more  
+                        through the links below.
+                    </p>
+
+                        <div class="more-info-details">
+                            <p><strong>Address:</strong> 166 Rock Street, Loganville, GA 30052</p>
+                            <p><strong>Email:</strong> ferguslodge135@gmail.com</p>
+                            <p><strong>Meeting Nights:</strong> 1st & 3rd Thursday<br>Supper 6:30 Mtg 7:30 PM</p>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:ferguslodge135@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+            </section>
+        
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer section-light">
+    <div class="footer-container">
+        <p class="footer-title">Fergus Lodge #135 • Loganville, Georgia</p>
+        <p class="footer-sub">Chartered in 1850 • Under the Grand Lodge of Georgia</p>
+        <p class="footer-copy">© <span id="year"></span> Fergus Lodge #135. All Rights Reserved.</p>
+        <p class="footer-sm">Designed by: Mimosa Services<br> by: taterhead</p>
+       
+    </div>
+    </footer>
+
 </body>
 </html>

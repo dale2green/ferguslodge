@@ -1,0 +1,270 @@
+/*SECTIONS */
+
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section-light {
+  background: var(--bg2);
+  color: var(--text-color-t1);
+}
+
+.section-blue {
+  background: var(--bg); /* blue */
+  color: var(--bg2);
+}
+
+.section-alt {
+  background: var(--bg2);
+}
+
+.dues-card {
+  padding: 2rem 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.dues-card p {
+  margin-bottom: 1rem;
+}
+
+.dues-btn {
+  background: #fc0505;
+  color: var(--text-color-t1);
+  margin-top: 1.75rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* HEADER + NAV */
+
+.site-header {
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg2);
+  color: var(--text-color-t1);
+  padding: 0.75rem 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+}
+
+main {
+  padding-top: 40px;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--text-color-t1);
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu a {
+  color: var(--text-color-t1);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Mobile */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-color-t1);
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: var(--bg-header);
+    padding: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    width: 200px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* Contact Section */
+#contact {
+  padding: 5rem 1rem;
+}
+
+#contact h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-main {
+  line-height: 1.6;
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin-bottom: 0.75rem;
+}
+
+
+/* Officers Section */
+.officers-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+#officer-list {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+#officer-list li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+#officer-list strong {
+  font-weight: 700;
+}
+
+
+/* Events page */
+
+.event-block {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.event-block h2 {
+  color: var(--text-color-t1);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.events-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-date {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-t1);
+}
+
+.event-desc {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-color-t1);
+}
+
+/* MORE INFO SECTION */
+.more-info-details {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.more-info-details p {
+  margin-bottom: 0.75rem;
+}
+
+/* Social icons */
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links a {
+  color: var(--text-color-t1);
+  font-size: 2rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Active link highlight */
+.nav-link.active {
+  border-bottom: 2px solid var(--text-color-t1);
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--bg2);
+  color: var(--text-color-t1);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-sub {
+  opacity: 0.9;
+  margin: 0.5rem 0 1rem;
+}
+
+.footer-copy {
+  opacity: 0.8;
+}
+.footer-sm {
+  opacity: 0.8;
+  font-size: .9rem;
+  padding-top:  5px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,1007 @@
+/* 🔹 Global Layout */
+.nav-item {
+  list-style: none;
+}
+
+
+h3 {
+  font-size: 48px;
+}
+
+.logo-one a,
+.nav-item a {
+  color: var(--text-color-t1);
+  font-size: 1.01rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 4px 4px;
+  display: inline-block;
+  letter-spacing: 1.1px;
+  transition: transform 0.3s ease;
+}
+
+.logo-one a:hover,
+.nav-item a:hover {
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+.about-contact,
+.org-heading {
+  color: var(--text-color-t1);
+}
+
+
+
+
+
+/*  EVENT Section  */
+.holiday-raffle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  margin-top: 4rem;
+  background: linear-gradient(to right, #fffaf0, #fefefe);
+  font-family: 'Georgia', serif;
+}
+
+.lodge-events {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.event-card {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+
+.event-card:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.event-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-cause,
+.event-details,
+.event-contact {
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.event-card p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.event-card p:last-of-type {
+  margin-top: 1.5rem; /* Adds extra space above the button */
+}
+
+
+
+.stew-order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stew-order-btn:hover {
+  background-color: #2c3e50;
+}
+
+.event-faq {
+  background-color: var(--bg1);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.event-faq h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+  text-align: center;
+}
+
+.event-faq ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-faq li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+/* fade in for event cards */
+
+
+.event-card {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.event-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.event-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+/* calendar section */
+.calendar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--bg);
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+
+
+.calendar-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+
+.calendar-grid,
+.lodge-events {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.calendar-header h2 {
+  margin-bottom: .5rem;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  background: var(--bg);
+}
+
+.calendar-header p {
+  margin-top: 0.5rem; 
+}
+
+.calendar-subheading,
+.calendar-header h2,
+.calendar-header p {
+  text-align: center;
+}
+.calendar-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.calendar-card h4 {
+  font-size: 1.5rem;
+  color: #34495e;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.calendar-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.calendar-card .stew-form h5 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #2c3e50;
+}
+
+.calendar-wrapper {
+  padding-top: 5rem;
+}
+
+/* blog posts */
+.blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  background: var(--bg);
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-t1);
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-top: 0.5rem;
+}
+
+.blog-list {
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-card {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.calendar-card h4,
+.blog-card h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: var(--text-color-t2);
+}
+
+.calendar-card p,
+.blog-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+.read-more {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.blog-card {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.read-more {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*  calendar and blog styles */
+.simple-nav {
+  padding: 1rem;
+  background: var(--bg1);
+  text-align: center;
+}
+.simple-nav a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+.simple-nav a:hover {
+  text-decoration: underline;
+}
+
+/* calendar and bog section styles */
+.calendar-grid, .blog-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.calendar-card, .blog-card {
+  background-color: var(--bg1);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease ;
+}
+.blog-card h3, .calendar-card h4 {
+  margin-bottom: 0.5rem;
+}
+.blog-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+
+
+
+
+
+/*  Dues section  */
+.paydues {
+  position: relative;
+  background-color: var(--bg1);
+  padding: 4rem;
+  
+  font-family: 'Georgia', serif;
+  color: var(--text-color-t1);
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.dues-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dues-icon i {
+  font-size: 2.5rem;
+  color: #8e44ad;
+  margin-bottom: 1rem;
+}
+
+.dues-title {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.dues-info,
+.dues-check {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.dues-btn,
+.locate-btn {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);;
+}
+
+.dues-btn:hover,
+.locate-btn:hover {
+  background-color: #732d91;
+}
+
+/*  Officer Section Styles */
+.officer-section {
+  scroll-margin-top: 18rem;
+}
+
+.officer-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.officer-header h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color-t1);
+  letter-spacing: 1.1px;
+}
+
+.officers {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 4rem 1rem;
+}
+
+
+.officer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.officer-list .chairs {
+  text-align: center;
+  padding: 0.75rem 1rem;
+  letter-spacing: 1.1px;
+  /* border-bottom: 1px solid #ddd; */
+  font-size: 1.1rem;
+  font-family: "Georgia", serif;
+  text-decoration: none;
+}
+
+
+
+/* About Us Section */
+.about-us {
+  position: relative;
+  padding: 40px 20px 30px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  background-color: var(--bg1);
+  color: var(--text-color-t1);
+}
+
+.find-us p {
+  font-size: .95rem;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.find-us a {
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.find-us a:hover {
+  text-decoration: underline;
+}
+
+.find-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.find-info li {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.find-info span {
+  display: inline-block;
+  width: 100%;
+}
+
+.find-info a {
+  color: var(--accent, black); /* fallback to gold */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.find-info li:hover {
+  transform: scale(1.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.find-info a:hover {
+  text-decoration: underline;
+}
+
+.find-info i {
+  margin-right: 6px;
+}
+
+/* Mason Affiliated Organizations*/
+.Other-orgs {
+  position: relative;
+  padding: 2rem 1rem;
+  background-color: var(--bg, #f9f9f9);
+ mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.org-heading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg, #f9f9f9) 0%, transparent 100%);
+}
+
+.carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg, #f9f9f9) 0%, transparent 100%);
+}
+
+.org-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+  /* z-index: 0; */
+  scrollbar-width: none;
+  }
+
+
+.org-carousel::-webkit-scrollbar {
+  display: none;
+}
+.org-carousel {
+  scrollbar-width: none;
+}
+
+
+.mason-cards {
+  flex: 0 0 260px;
+  width: 260px;
+  scroll-snap-align: start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mason-cards:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mason-cards a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.mason-cards h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.scroll-controls {
+  display: flex;
+  justify-content: center;
+  gap: .25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-color-base);
+  transition: background 0.2s ease;
+}
+
+.scroll-btn:hover {
+  /* background: rgba(0, 0, 0, 0.15); */
+  transform: scale(1.3);
+}
+
+.scroll-btn.left {
+  margin-right: 0.5rem;
+}
+
+.scroll-btn.right {
+  margin-left: 0.5rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: var(--bg1);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
+  text-align: left;
+}
+
+.event-faq h5,
+.faq-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+  text-align: center;
+}
+
+.event-faq ul,
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-faq li,
+.faq-list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+
+
+/* footer  */
+
+.foot-section {
+  background-color: var(--bg1);
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: var(--text-color-t1);
+  border-top: 1px solid #ccc;
+}
+
+.foot-sec footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-media h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #8e44ad;
+}
+
+.icons a {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color-t1);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #8e44ad;
+}
+
+.design-spec {
+  text-align: center;
+  background-color: var(--bg1);
+  padding-bottom: 15px;
+  }
+
+.design-spec:hover {
+  font-size: larger;
+}
+
+/*  Dues section  */
+.paydues {
+  position: relative;
+  background-color: var(--bg1);
+  padding: 4rem;
+  
+  font-family: 'Georgia', serif;
+  color: var(--text-color-t1);
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.dues-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dues-icon i {
+  font-size: 2.5rem;
+  color: #8e44ad;
+  margin-bottom: 1rem;
+}
+
+.dues-title {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.dues-info,
+.dues-check {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.dues-btn,
+.locate-btn {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);;
+}
+
+.dues-btn:hover,
+.locate-btn:hover {
+  background-color: #732d91;
+}
+
+/*  Officer Section Styles */
+.officer-section {
+  scroll-margin-top: 18rem;
+}
+
+.officer-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.officer-header h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color-t1);
+  letter-spacing: 1.1px;
+}
+
+.officers {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 4rem 1rem;
+}
+
+
+.officer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.officer-list .chairs {
+  text-align: center;
+  padding: 0.75rem 1rem;
+  letter-spacing: 1.1px;
+  /* border-bottom: 1px solid #ddd; */
+  font-size: 1.1rem;
+  font-family: "Georgia", serif;
+  text-decoration: none;
+}
+
+
+
+/* About Us Section */
+.about-us {
+  position: relative;
+  padding: 40px 20px 30px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  background-color: var(--bg1);
+  color: var(--text-color-t1);
+}
+
+.find-us p {
+  font-size: .95rem;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.find-us a {
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.find-us a:hover {
+  text-decoration: underline;
+}
+
+.find-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.find-info li {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.find-info span {
+  display: inline-block;
+  width: 100%;
+}
+
+.find-info a {
+  color: var(--accent, black); /* fallback to gold */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.find-info li:hover {
+  transform: scale(1.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.find-info a:hover {
+  text-decoration: underline;
+}
+
+.find-info i {
+  margin-right: 6px;
+}
+
+/* footer  */
+
+.foot-section {
+  background-color: var(--bg1);
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: var(--text-color-t1);
+  border-top: 1px solid #ccc;
+}
+
+.foot-sec footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-media h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #8e44ad;
+}
+
+.icons a {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color-t1);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #8e44ad;
+}
+
+.design-spec {
+  text-align: center;
+  background-color: var(--bg1);
+  padding-bottom: 15px;
+  }
+
+.design-spec:hover {
+  font-size: larger;
+}
