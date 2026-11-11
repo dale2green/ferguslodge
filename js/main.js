@@ -39,7 +39,7 @@ window.addEventListener("scroll", () => {
     { title: "Junior Warden", name: "Ryan Franklin" },
     { title: "Senior Deacon", name: "Bo Huff" },
     { title: "Junior Deacon", name: "Michael Kissel" },
-    { title: "Senior Steward", name: "Zac Hinniant" },
+    { title: "Senior Steward", name: "Zack Hinnant" },
     { title: "Junior Steward", name: "Mark Henson" },
     { title: "Tyler", name: "Steve Bowers" },
     { title: "Secretary", name: "Brad Johnson" },
